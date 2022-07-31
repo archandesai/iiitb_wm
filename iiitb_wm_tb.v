@@ -55,7 +55,7 @@ automatic_washing_machine machine1(clk, reset, door_close, start, filled, deterg
 	begin
 		$monitor("Time=%d, Clock=%b, Reset=%b, start=%b, door_close=%b, filled=%b, detergent_added=%b, cycle_timeout=%b, drained=%b, spin_timeout=%b, door_lock=%b, motor_on=%b, fill_valve_on=%b, drain_valve_on=%b, soap_wash=%b, water_wash=%b, done=%b",$time, clk, reset, start, door_close, filled, detergent_added, cycle_timeout, drained, spin_timeout, door_lock, motor_on, fill_value_on, drain_value_on, soap_wash, water_wash, done);
 	end
-  intitial 
+  initial 
   begin
     $dumpfile("iiitb_wm_tb.vcd");
     $dumpvars(0,iiitb_wm_tb);
