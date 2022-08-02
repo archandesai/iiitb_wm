@@ -2,7 +2,7 @@
 
 ASIC design of automatic washing machine
 
-# Introduction
+## Introduction
 
 Washing machines are everywhere these days. In this projects we will try to implement ASIC design of Aoutomatic washing machine.
 
@@ -14,17 +14,17 @@ In a specific automatic washing machine there are usually six states as given ab
 ![Automatic Washing machine](https://user-images.githubusercontent.com/110079753/182374552-91e3eaa5-d47a-4b4e-bfb2-92fa187378f1.PNG)
 This is a simulation waveform of Automatic Washing machine.
 
-# About iverilog
+### About iverilog
 
 Icarus Verilog or iverilog is an implementation of the Verilog hardware description language.
 
-# About GTKWave
+### About GTKWave
 
 GTKWave is a fully featured GTK+ v1. 2 based wave viewer for Unix and Win32 which reads Ver Structural Verilog Compiler generated AET files as well as standard Verilog VCD/EVCD files and allows their viewing.
 
-# Downloading iberilog and gtkwave
+### Downloading iberilog and gtkwave
 
-## For Ubuntu
+#### For Ubuntu
 
 Open your terminal and write following command.
 
