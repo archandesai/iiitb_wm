@@ -39,7 +39,7 @@ To clone the Repository and download the Netlist files for Simulation, enter the
 ```
 $   sudo apt install -y git
 $   git clone $ https://github.com/archandesai/iiitb_wm
-$   cd iiitb_pwm_gen
+$   cd iiitb_wm
 $   iverilog iiitb_wm.v iiitb_wm_tb.v
 $   ./a.out
 $   gtkwave iiitb_wm_tb.vcd
