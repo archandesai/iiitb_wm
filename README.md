@@ -34,4 +34,47 @@ $ sudo apt install iverilog
 $ sudo apt install gtkwave
 ```
 
+### Functional Simulation
+To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
+```
+$   sudo apt install -y git
+$   git clone $ https://github.com/archandesai/iiitb_wm
+$   cd iiitb_pwm_gen
+$   iverilog iiitb_wm.v iiitb_wm_tb.v
+$   ./a.out
+$   gtkwave iiitb_wm_tb.vcd
+```
+## synthesis of verilog code
+
+#### About Yosys
+Yosys is a framework for Verilog RTL synthesis. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains
+```
+$   sudo apt-get update
+$   sudo apt-get -y install yosys
+```
+to synthesize
+```
+$   yosys -s yosys_run.sh
+```
+
+
+
+## Contributors 
+
+- **Archan Desai** 
+- **Kunal Ghosh** 
+
+
+
+## Acknowledgments
+
+
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+- Ishan Desai
+## Contact Information
+
+- Archan Desau, Postgraduate Student, International Institute of Information Technology, Bangalore  archan.desai00@gmail.com
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
+
+
 
