@@ -77,6 +77,8 @@ module iiitb_wm(clk, reset, door_close, start, filled, detergent_added, cycle_ti
 				drain_value_on = 0;
 				door_lock = 1;
 				done = 0;
+				water_wash = 0;
+				soap_wash = 0;
 			end
 			add_detergent:
 			if(detergent_added==1)
@@ -88,6 +90,7 @@ module iiitb_wm(clk, reset, door_close, start, filled, detergent_added, cycle_ti
 				door_lock = 1;
 				soap_wash = 1;
 				done = 0;
+				water_wash =1;
 			end
 			else
 			begin
@@ -108,8 +111,10 @@ module iiitb_wm(clk, reset, door_close, start, filled, detergent_added, cycle_ti
 				fill_value_on = 0;
 				drain_value_on = 0;
 				door_lock = 1;
-				//soap_wash = 1;
+				soap_wash = 1;
 				done = 0;
+				water_wash = 1;
+				
 			end
 			else
 			begin
@@ -118,8 +123,9 @@ module iiitb_wm(clk, reset, door_close, start, filled, detergent_added, cycle_ti
 				fill_value_on = 0;
 				drain_value_on = 0;
 				door_lock = 1;
-				//soap_wash = 1;
+				soap_wash = 1;
 				done = 0;
+				water_wash = 1;
 			end
 			drain_water:
 			 if(drained==1)
@@ -132,12 +138,12 @@ module iiitb_wm(clk, reset, door_close, start, filled, detergent_added, cycle_ti
 					drain_value_on = 0;
 					door_lock = 1;
 					soap_wash = 1;
-					//water_wash = 1;
+					water_wash = 1;
 					done = 0;
 				end
 				else
 				begin
-				next_state = spin;
+				        next_state = spin;
 					motor_on = 0;
 					fill_value_on = 0;
 					drain_value_on = 0;
@@ -155,7 +161,7 @@ module iiitb_wm(clk, reset, door_close, start, filled, detergent_added, cycle_ti
 				drain_value_on = 1;
 				door_lock = 1;
 				soap_wash = 1;
-				//water_wash = 1;
+				water_wash = 1;
 				done = 0;
 			end
 			spin:
@@ -181,8 +187,17 @@ module iiitb_wm(clk, reset, door_close, start, filled, detergent_added, cycle_ti
 				water_wash = 1;
 				done = 0;
 			end
-			default:
+			default: begin
+			        motor_on = 0;
+                                fill_value_on = 0;
+                                drain_value_on = 0;
+                                door_lock = 0;
+                                soap_wash = 0;
+                                water_wash = 0;
+                                done = 0;
+
 				next_state = check_door;
+			end
 				
 			endcase
 	end
