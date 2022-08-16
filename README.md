@@ -11,8 +11,6 @@ Above given image is the state diagram of Aoutomatic washing machine
 
 In a specific automatic washing machine there are usually six states as given above such as, Check door, Fill water, Add detergent, Cycle, Drain water and Spin.
 
-![Automatic Washing machine](https://user-images.githubusercontent.com/110079753/182374552-91e3eaa5-d47a-4b4e-bfb2-92fa187378f1.PNG)
-This is a simulation waveform of Automatic Washing machine.
 
 ### About iverilog
 
@@ -82,16 +80,10 @@ Below picture gives an insight of the procedure. Here while using iverilog, you 
 ![image](https://user-images.githubusercontent.com/72696170/183296780-4bad9547-69e9-4cee-b791-acb5a38951bf.png)
 
 
-# BLOCK DIAGRAM
-
- ![image](https://user-images.githubusercontent.com/72696170/181302041-489c49ad-2ba5-4083-ac92-8a216c5a46e1.png)
- 
-The block diagram of the traffic light controller is shown in the figure above.
 
 # SIMULATION
 Pre - synthesis simulation waveform:
-![pre](https://user-images.githubusercontent.com/110079753/182374552-91e3eaa5-d47a-4b4e-bfb2-92fa187378f1.PNG)
-
+![pre]![Screenshot from 2022-08-16 23-17-02](https://user-images.githubusercontent.com/110079753/184945366-80562068-8839-4a1b-b7a5-772d8141741f.png)
 
 Post - synthesis simulation waveform:
 ![post]![Screenshot from 2022-08-16 14-29-24](https://user-images.githubusercontent.com/110079753/184944682-8e1a9e65-c063-497a-8d3c-90cfb19ebea6.png)
