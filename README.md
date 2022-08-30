@@ -205,6 +205,10 @@ In this section we wil do following step:
 ```
  run_cts
  ```
+We will get following reports after clock tree synthesis
+![cts1](https://user-images.githubusercontent.com/110079753/187482546-a60cca50-3da1-4c6e-aa12-e2faf5973149.png)
+![cts2](https://user-images.githubusercontent.com/110079753/187482593-d4c49b16-1994-402b-a213-64949414d9db.png)
+
  
  ### ROUTING
  In this step we will do routing of our projects using:
@@ -213,7 +217,6 @@ In this section we wil do following step:
  ```
  We will get following layout after routing.
  ![routing](https://user-images.githubusercontent.com/110079753/187477803-40f8c3d5-0c85-40e4-8960-bfdb3a9dbff7.png)
-
  
  
 
