@@ -54,7 +54,7 @@ to synthesize
 ```
    yosys -s yosys_run.sh
 ```
-# GLS - Gate Level Simulation
+## GLS - Gate Level Simulation
 GLS is generating the simulation output by running test bench with netlist file generated from synthesis as design under test. Netlist is logically same as RTL code, therefore, same test bench can be used for it.
 
 Below picture gives an insight of the procedure. Here while using iverilog, you also include gate level verilog models to generate GLS simulation.
@@ -62,7 +62,7 @@ Below picture gives an insight of the procedure. Here while using iverilog, you 
 ![image](https://user-images.githubusercontent.com/72696170/183296780-4bad9547-69e9-4cee-b791-acb5a38951bf.png)
 
 
-# SIMULATION
+## SIMULATION
 Pre - synthesis simulation waveform:
 ![Screenshot from 2022-08-16 23-17-02](https://user-images.githubusercontent.com/110079753/184945366-80562068-8839-4a1b-b7a5-772d8141741f.png)
 
@@ -70,7 +70,7 @@ Post - synthesis simulation waveform:
 ![Screenshot from 2022-08-16 14-29-24](https://user-images.githubusercontent.com/110079753/184944682-8e1a9e65-c063-497a-8d3c-90cfb19ebea6.png)
 
 
-## Creating a Custom Inverter Cell
+### Creating a Custom Inverter Cell
 To create custom inverter cell we have to follow following steps
 ```
  git clone https://github.com/nickson-jose/vsdstdcelldesign.git
@@ -82,7 +82,7 @@ This is the layout of the inverter.
 ![vsdinv](https://user-images.githubusercontent.com/110079753/187478897-012d32bf-b122-489b-9c47-f0c9eca16976.png)
 
 
-# PHYSICAL DESIGN
+## PHYSICAL DESIGN
 For getting physical design we have to do following steps:
 
 1) RTL design
@@ -95,7 +95,7 @@ For getting physical design we have to do following steps:
 8) Tapeout
 
 
-## OpenLane
+###OpenLane
 
 OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, CU-GR, Klayout and a number of custom scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII.
 
@@ -112,7 +112,7 @@ The docker installation is given here: https://docs.docker.com/engine/install/ub
   sudo make
   sudo make test
 ```
-## MAGIC
+### MAGIC
 
 Magic is a venerable VLSI layout tool, written in the 1980's at Berkeley by John Ousterhout, now famous primarily for writing the scripting interpreter language Tcl. Due largely in part to its liberal Berkeley open-source license, magic has remained popular with universities and small companies. The open-source license has allowed VLSI engineers with a bent toward programming to implement clever ideas and help magic stay abreast of fabrication technology. However, it is the well thought-out core algorithms which lend to magic the greatest part of its popularity. Magic is widely cited as being the easiest tool to use for circuit layout, even for people who ultimately rely on commercial tools for their product design flow. More about magic at http://opencircuitdesign.com/magic/index.html
 
@@ -138,10 +138,10 @@ Then we have to do following steps to instal magic.
 ```
 
 
-## LAYOUT
+### LAYOUT
 In this section we will see layout of the projects using openlane and magic for different steps.
 
-### PREPERATION
+#### PREPERATION
 
 To get layout of the project first we have to set few things.
 ```
@@ -165,7 +165,7 @@ Now we have to do following steps:
  add_lefs -src $lefs
 ```
 
-### Synthesis
+#### Synthesis
 In this part we will do sythesis of the project using following code:
 ```
  run_synthesis
@@ -185,7 +185,7 @@ Then we will go to ``` results/floorplan``` and type following command on termin
  We will get following floorplan
  ![floorplan](https://user-images.githubusercontent.com/110079753/187462644-c6700dce-a8f1-4724-961d-6ce1414702f6.png)
 
-### PLACEMENT
+#### PLACEMENT
 In placement we will do following steps:
 ```
  run_placement
@@ -200,7 +200,7 @@ We will get following layout
 ![Screenshot from 2022-08-30 15-37-43](https://user-images.githubusercontent.com/110079753/187410707-caa29762-7b8d-44f9-ba0a-531ed186e761.png)
 
 
-### CLOCK TREE SYNTHESIS
+#### CLOCK TREE SYNTHESIS
 In this section we wil do following step:
 ```
  run_cts
@@ -210,7 +210,7 @@ We will get following reports after clock tree synthesis
 ![cts2](https://user-images.githubusercontent.com/110079753/187482593-d4c49b16-1994-402b-a213-64949414d9db.png)
 
  
- ### ROUTING
+ #### ROUTING
  In this step we will do routing of our projects using:
  ```
   run_routing
