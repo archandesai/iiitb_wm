@@ -232,7 +232,7 @@ We will get following reports after clock tree synthesis
 
 ## Contact Information
 
-- Archan Desau, Postgraduate Student, International Institute of Information Technology, Bangalore  archan.desai00@gmail.com
+- Archan Desai, Postgraduate Student, International Institute of Information Technology, Bangalore  archan.desai00@gmail.com
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
 
 
