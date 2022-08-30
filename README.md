@@ -171,6 +171,7 @@ In this part we will do sythesis of the project using following code:
  run_synthesis
 ```
 This is synthesized output:
+
 ![Screenshot from 2022-08-30 15-43-32](https://user-images.githubusercontent.com/110079753/187411613-0130c3ac-e316-477f-9e8f-87ef52b712b5.png)
 
 ### FLOORPLANNING
@@ -215,7 +216,7 @@ We will get following reports after clock tree synthesis
  ```
   run_routing
  ```
- ```
+ 
 Then we will go to ``` results/routing``` and type following command on terminal
 ```
  magic -T /home/archan/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read /home/archan/OpenLane/designs/iiitb_wm/runs/RUN_2022.08.30_11.56.04 ../../tmp/merged.nom.lef def read iiitb_wm.def &
