@@ -161,9 +161,15 @@ Then we will go to ``` results/floorplan``` and type following command on termin
  ![floorplan](https://user-images.githubusercontent.com/110079753/187462644-c6700dce-a8f1-4724-961d-6ce1414702f6.png)
 
 ### PLACEMENT
+In placement we will do following steps:
+```
+ run_placement
+```
+Then we will go to ``` results/placement``` and type following command on terminal
+```
+ magic -T /home/archan/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read /home/archan/OpenLane/designs/iiitb_wm/runs/RUN_2022.08.30_11.56.04 ../../tmp/merged.nom.lef def read iiitb_wm.def &
 
-
-
+We will get following layout
 
 ![Screenshot from 2022-08-30 15-38-20](https://user-images.githubusercontent.com/110079753/187410773-7a725e44-60e4-4051-86c0-a89c21daef4a.png)
 ![Screenshot from 2022-08-30 15-37-43](https://user-images.githubusercontent.com/110079753/187410707-caa29762-7b8d-44f9-ba0a-531ed186e761.png)
