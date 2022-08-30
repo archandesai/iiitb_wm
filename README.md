@@ -105,13 +105,64 @@ Run following commands one by one to fulfill the system requirement.
  sudo apt-get install mesa-common-dev libglu1-mesa-dev
  sudo apt-get install libncurses-dev
 ```
+Then we have to do following steps to instal magic.
 
-# Stats
+```
+ git clone https://github.com/RTimothyEdwards/magic
+ cd magic/
+ sudo make
+ sudo make install
+```
+## LAYOUT
+In this section we will see layout of the projects using openlane and magic for different steps.
 
+### Preperation
+
+To get layout of the project first we have to set few things.
+```
+ cd OpenLane
+ cd design
+ mkdir iiitb_wm
+ cd iiitb_wm
+ mkdir src
+```
+Here, We have to add ``` config.json ``` file in the iiitb_wm directory. And we have to add following file in src directory : ```iiitb_wm.v```, ```sky130_fd_sc_hd__fast.lib```,```sky130_fd_sc_hd__typical.lib```,```sky130_fd_sc_hd__slow.lib``` and ```sky130_vsdinv.lef```.
+
+Now we have to do following steps:
+
+```
+ cd OpenLane
+ sudo make mount
+ ./flow.tcl -interactive
+ package require openlane 0.9
+ prep -design iiitb_wm
+ set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+ add_lefs -src $lefs
+```
+
+### Synthesis
+In this part we will do sythesis of the project using following code:
+```
+ run_synthesis
+```
+This is synthesized output:
 ![Screenshot from 2022-08-30 15-43-32](https://user-images.githubusercontent.com/110079753/187411613-0130c3ac-e316-477f-9e8f-87ef52b712b5.png)
 
+### FLOORPLANNING
+In floorplanning we will do following steps:
+```
+ run_floorplan
+```
+Then we will go to ``` results/floorplan``` and type following command on terminal
+```
+ magic -T /home/archan/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read /home/archan/OpenLane/designs/iiitb_wm/runs/RUN_2022.08.30_11.56.04 ../../tmp/merged.nom.lef def read iiitb_wm.def &
+ ```
+ We will get following floorplan
+ ![floorplan](https://user-images.githubusercontent.com/110079753/187462644-c6700dce-a8f1-4724-961d-6ce1414702f6.png)
 
-# LAYOUT
+### PLACEMENT
+
+
 
 
 ![Screenshot from 2022-08-30 15-38-20](https://user-images.githubusercontent.com/110079753/187410773-7a725e44-60e4-4051-86c0-a89c21daef4a.png)
