@@ -27,32 +27,32 @@ GTKWave is a fully featured GTK+ v1. 2 based wave viewer for Unix and Win32 whic
 Open your terminal and write following command.
 
 ```
-$ sudo apt update
-$ sudo apt install iverilog
-$ sudo apt install gtkwave
+ sudo apt update
+ sudo apt install iverilog
+ sudo apt install gtkwave
 ```
 
 ### Functional Simulation
 To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
 ```
-$   sudo apt install -y git
-$   git clone $ https://github.com/archandesai/iiitb_wm
-$   cd iiitb_wm
-$   iverilog iiitb_wm.v iiitb_wm_tb.v
-$   ./a.out
-$   gtkwave iiitb_wm_tb.vcd
+   sudo apt install -y git
+   git clone $ https://github.com/archandesai/iiitb_wm
+   cd iiitb_wm
+   iverilog iiitb_wm.v iiitb_wm_tb.v
+   ./a.out
+   gtkwave iiitb_wm_tb.vcd
 ```
 ## synthesis of verilog code
 
 #### About Yosys
 Yosys is a framework for Verilog RTL synthesis. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains
 ```
-$   sudo apt-get update
-$   sudo apt-get -y install yosys
+   sudo apt-get update
+   sudo apt-get -y install yosys
 ```
 to synthesize
 ```
-$   yosys -s yosys_run.sh
+   yosys -s yosys_run.sh
 ```
 # GLS - Gate Level Simulation
 GLS is generating the simulation output by running test bench with netlist file generated from synthesis as design under test. Netlist is logically same as RTL code, therefore, same test bench can be used for it.
@@ -90,13 +90,14 @@ Post - synthesis simulation waveform:
 
 # Stats
 
-![Screenshot from 2022-08-17 21-25-32](https://user-images.githubusercontent.com/110079753/185186448-b22bf29c-18b9-4359-8519-47b453c49a92.png)
+![Screenshot from 2022-08-30 15-43-32](https://user-images.githubusercontent.com/110079753/187411613-0130c3ac-e316-477f-9e8f-87ef52b712b5.png)
 
 
 # LAYOUT
 
-![Screenshot from 2022-08-30 15-37-43](https://user-images.githubusercontent.com/110079753/187410707-caa29762-7b8d-44f9-ba0a-531ed186e761.png)
+
 ![Screenshot from 2022-08-30 15-38-20](https://user-images.githubusercontent.com/110079753/187410773-7a725e44-60e4-4051-86c0-a89c21daef4a.png)
+![Screenshot from 2022-08-30 15-37-43](https://user-images.githubusercontent.com/110079753/187410707-caa29762-7b8d-44f9-ba0a-531ed186e761.png)
 
 
 
