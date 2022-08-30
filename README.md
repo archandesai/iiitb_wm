@@ -168,7 +168,7 @@ In placement we will do following steps:
 Then we will go to ``` results/placement``` and type following command on terminal
 ```
  magic -T /home/archan/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read /home/archan/OpenLane/designs/iiitb_wm/runs/RUN_2022.08.30_11.56.04 ../../tmp/merged.nom.lef def read iiitb_wm.def &
-
+```
 We will get following layout
 
 ![Screenshot from 2022-08-30 15-38-20](https://user-images.githubusercontent.com/110079753/187410773-7a725e44-60e4-4051-86c0-a89c21daef4a.png)
