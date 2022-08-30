@@ -2,7 +2,7 @@
 
 ASIC design of automatic washing machine
 
-## Introduction
+## INTRODUCTION
 
 Washing machines are everywhere these days. In this projects we will try to implement ASIC design of Aoutomatic washing machine.
 
@@ -42,7 +42,7 @@ To clone the Repository and download the Netlist files for Simulation, enter the
    ./a.out
    gtkwave iiitb_wm_tb.vcd
 ```
-## synthesis of verilog code
+## Synthesis of verilog code
 
 #### About Yosys
 Yosys is a framework for Verilog RTL synthesis. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains
