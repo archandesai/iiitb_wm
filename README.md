@@ -61,12 +61,6 @@ Below picture gives an insight of the procedure. Here while using iverilog, you 
 
 ![image](https://user-images.githubusercontent.com/72696170/183296780-4bad9547-69e9-4cee-b791-acb5a38951bf.png)
 
-# PHYSICAL DESIGN
-
-## OpenLane
-
-OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, CU-GR, Klayout and a number of custom scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII.
-
 
 # SIMULATION
 Pre - synthesis simulation waveform:
@@ -74,6 +68,43 @@ Pre - synthesis simulation waveform:
 
 Post - synthesis simulation waveform:
 ![post]![Screenshot from 2022-08-16 14-29-24](https://user-images.githubusercontent.com/110079753/184944682-8e1a9e65-c063-497a-8d3c-90cfb19ebea6.png)
+
+
+# PHYSICAL DESIGN
+
+## OpenLane
+
+OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, CU-GR, Klayout and a number of custom scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII.
+
+First you have to install prerequsites.
+```
+ apt install -y build-essential python3 python3-venv python3-pip
+ 
+```
+The docker installation is given here: https://docs.docker.com/engine/install/ubuntu/
+
+```
+  git clone https://github.com/The-OpenROAD-Project/OpenLane.git
+  cd OpenLane/
+  sudo make
+  sudo make test
+```
+## MAGIC
+
+Magic is a venerable VLSI layout tool, written in the 1980's at Berkeley by John Ousterhout, now famous primarily for writing the scripting interpreter language Tcl. Due largely in part to its liberal Berkeley open-source license, magic has remained popular with universities and small companies. The open-source license has allowed VLSI engineers with a bent toward programming to implement clever ideas and help magic stay abreast of fabrication technology. However, it is the well thought-out core algorithms which lend to magic the greatest part of its popularity. Magic is widely cited as being the easiest tool to use for circuit layout, even for people who ultimately rely on commercial tools for their product design flow. More about magic at http://opencircuitdesign.com/magic/index.html
+
+Run following commands one by one to fulfill the system requirement.
+
+```
+ sudo apt-get install m4
+ sudo apt-get install tcsh
+ sudo apt-get install csh
+ sudo apt-get install libx11-dev
+ sudo apt-get install tcl-dev tk-dev
+ sudo apt-get install libcairo2-dev
+ sudo apt-get install mesa-common-dev libglu1-mesa-dev
+ sudo apt-get install libncurses-dev
+```
 
 # Stats
 
