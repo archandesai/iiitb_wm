@@ -64,10 +64,10 @@ Below picture gives an insight of the procedure. Here while using iverilog, you 
 
 # SIMULATION
 Pre - synthesis simulation waveform:
-![pre]![Screenshot from 2022-08-16 23-17-02](https://user-images.githubusercontent.com/110079753/184945366-80562068-8839-4a1b-b7a5-772d8141741f.png)
+![pre][Screenshot from 2022-08-16 23-17-02](https://user-images.githubusercontent.com/110079753/184945366-80562068-8839-4a1b-b7a5-772d8141741f.png)
 
 Post - synthesis simulation waveform:
-![post]![Screenshot from 2022-08-16 14-29-24](https://user-images.githubusercontent.com/110079753/184944682-8e1a9e65-c063-497a-8d3c-90cfb19ebea6.png)
+![post][Screenshot from 2022-08-16 14-29-24](https://user-images.githubusercontent.com/110079753/184944682-8e1a9e65-c063-497a-8d3c-90cfb19ebea6.png)
 
 
 # PHYSICAL DESIGN
