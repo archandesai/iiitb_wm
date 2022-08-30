@@ -70,7 +70,30 @@ Post - synthesis simulation waveform:
 ![Screenshot from 2022-08-16 14-29-24](https://user-images.githubusercontent.com/110079753/184944682-8e1a9e65-c063-497a-8d3c-90cfb19ebea6.png)
 
 
+## Creating a Custom Inverter Cell
+To create custom inverter cell we have to follow following steps
+```
+ git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+ cd vsdstdcelldesign
+ cp ./libs/sky130A.tech sky130A.tech
+ magic -T sky130A.tech sky130_inv.mag &
+```
+This is the layout of the inverter.
+![vsdinv](https://user-images.githubusercontent.com/110079753/187478897-012d32bf-b122-489b-9c47-f0c9eca16976.png)
+
+
 # PHYSICAL DESIGN
+For getting physical design we have to do following steps:
+
+1) RTL design
+2) Synthesis
+3) Floorplanning
+4) Placement
+5) Clock tree synthesis
+6) Routing
+7) Signoff
+8) Tapeout
+
 
 ## OpenLane
 
@@ -113,10 +136,12 @@ Then we have to do following steps to instal magic.
  sudo make
  sudo make install
 ```
+
+
 ## LAYOUT
 In this section we will see layout of the projects using openlane and magic for different steps.
 
-### Preperation
+### PREPERATION
 
 To get layout of the project first we have to set few things.
 ```
@@ -175,7 +200,22 @@ We will get following layout
 ![Screenshot from 2022-08-30 15-37-43](https://user-images.githubusercontent.com/110079753/187410707-caa29762-7b8d-44f9-ba0a-531ed186e761.png)
 
 
+### CLOCK TREE SYNTHESIS
+In this section we wil do following step:
+```
+ run_cts
+ ```
+ 
+ ### ROUTING
+ In this step we will do routing of our projects using:
+ ```
+  run_routing
+ ```
+ We will get following layout after routing.
+ ![routing](https://user-images.githubusercontent.com/110079753/187477803-40f8c3d5-0c85-40e4-8960-bfdb3a9dbff7.png)
 
+ 
+ 
 
 ## Contributors 
 
