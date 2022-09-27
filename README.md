@@ -225,6 +225,12 @@ Then we will go to ``` results/routing``` and type following command on terminal
  We will get following layout after routing.
  ![routing](https://user-images.githubusercontent.com/110079753/187477803-40f8c3d5-0c85-40e4-8960-bfdb3a9dbff7.png)
  
+ #### Area
+ To get area of the design after rounting we will use box command in magic termina
+ 
+ This is an area of our design.
+ ![exam_box1](https://user-images.githubusercontent.com/110079753/192448294-26915eab-60c8-407f-92e0-916f98ed4248.png)
+
  
 
 ## Contributors 
