@@ -231,6 +231,26 @@ Then we will go to ``` results/routing``` and type following command on terminal
  This is an area of our design.
  
  ![exam_box1](https://user-images.githubusercontent.com/110079753/192448294-26915eab-60c8-407f-92e0-916f98ed4248.png)
+ 
+ ### Performance
+ In this section we will find performance of the design for that we have to follow foloowing step:
+ ```
+ cd OpenLane
+ sudo make mount
+ sta
+ read_liberty -max /home/archan/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v56.lib
+ read_liberty -min /home/archan/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v56.lib
+ read_verilog /home/archan/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/iiitb_wm.v
+ link_design iiitb_wm
+ read_sdc /home/archan/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/iiitb_wm.sdc
+ read_spef /home/archan/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/iiitb_wm.spef
+ set_propagated_clock [all_clocks]
+ report_checks
+
+ report_checks -form _75_ -to _75_
+ ```
+ ![exam_slack](https://user-images.githubusercontent.com/110079753/192700327-c4363bca-5c7e-42e3-8dba-cd42c6424a97.png)
+ 
 
  
 
