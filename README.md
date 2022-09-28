@@ -174,6 +174,7 @@ This is synthesized output:
 
 ![Screenshot from 2022-08-30 15-43-32](https://user-images.githubusercontent.com/110079753/187411613-0130c3ac-e316-477f-9e8f-87ef52b712b5.png)
 
+
 ### FLOORPLANNING
 In floorplanning we will do following steps:
 ```
@@ -225,7 +226,9 @@ Then we will go to ``` results/routing``` and type following command on terminal
  We will get following layout after routing.
  ![routing](https://user-images.githubusercontent.com/110079753/187477803-40f8c3d5-0c85-40e4-8960-bfdb3a9dbff7.png)
  
- #### Area
+ ## Results
+ 
+ ### Area
  To get area of the design after rounting we will use ``` box ``` command in magic termina
  
  This is an area of our design.
@@ -251,7 +254,24 @@ Then we will go to ``` results/routing``` and type following command on terminal
  ```
  ![exam_slack](https://user-images.githubusercontent.com/110079753/192700327-c4363bca-5c7e-42e3-8dba-cd42c6424a97.png)
  
+``` 
 
+Performance = 1/(data required time - slack)
+Performance = 1/(64.83 - 62.05)
+Performance = 0.3597 GHz
+```
+### Power
+This is a power analysis of our design.
+![exam_power](https://user-images.githubusercontent.com/110079753/192704337-cd0a223c-eacd-4af1-b511-8b44586cced7.png)
+
+### Total Cells
+![exam_stat3](https://user-images.githubusercontent.com/110079753/192704463-841f25fc-ef90-44d9-8daa-b5a9019befe2.png)
+ 
+```
+Flip-flop to standard cell ratio = Flip-flop / Total cell
+Flip-flop to standard cell ratio = 3/43
+Flip-flop to standard cell ratio = 6.98%
+```
  
 
 ## Contributors 
@@ -260,6 +280,7 @@ Then we will go to ``` results/routing``` and type following command on terminal
 - **Archan Desai** 
 - **Kunal Ghosh** 
 - **Rakshit Bhatia**
+
 - **Ishan Desai**
 - **Arsh Kedia** 
 
